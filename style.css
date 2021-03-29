@@ -73,10 +73,10 @@ input {
 .header__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1392px;
   min-width: 960px;
-  padding: 28px var(--space-basic) var(--space-basic) var(--space-basic);
+  padding: 28px var(--space-basic) 0 var(--space-basic);
   margin: 0 auto;
   position: relative;
 }
@@ -89,6 +89,7 @@ input {
 
 .header__nav-block > .nav__list {
   display: flex;
+  padding-bottom: var(--space-basic);
 }
 
 /* nav */
@@ -119,7 +120,7 @@ input {
 
 /* sitemap */
 .header__sitemap {
-  display: flex;
+  display: none;
   justify-content: center;
   position: fixed;
   top: 81px;
@@ -129,6 +130,13 @@ input {
   border-top: 1px solid var(--color-deep-grey);
   border-bottom: 1px solid var(--color-deep-grey);
   background-color: var(--color-light-grey);
+  animation: topToBottom 150ms linear;
+}
+
+.header__sitemap .active {
+  color: var(--color-white-basic);
+  background-color: var(--color-blue);
+  transition: all 200ms ease-in-out;
 }
 
 .sitemap-block {
@@ -161,7 +169,7 @@ input {
 }
 
 .sitemap-block li {
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .sitemap-block li:last-of-type {
@@ -172,7 +180,6 @@ input {
   display: inline-block;
   width: 100%;
   font-size: var(--font-small);
-  line-height: 1.5;
 }
 
 .sitemap-block li > a:after {
@@ -180,7 +187,7 @@ input {
   display: block;
   height: 2px;
   width: 0px;
-  margin-top: 4px;
+  margin-top: 2px;
   background-color: var(--color-white-basic);
   transition: all 200ms linear;
 }
@@ -197,4 +204,14 @@ input {
 
 .icon-icon:last-of-type {
   margin-right: 0;
+}
+
+/* animation section */
+@keyframes topToBottom {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 50%;
+  }
 }
