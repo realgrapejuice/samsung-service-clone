@@ -43,6 +43,7 @@ a {
   --color-light-grey: rgba(247, 247, 247, 1);
   --color-deep-grey: rgba(221, 221, 221, 1);
   --color-blue: #0066ff;
+  --color-yellow: #f7df16;
 
   --space-basic: 24px;
 
@@ -328,6 +329,26 @@ input {
   transition: opacity 200ms linear;
 }
 
+.carousel-wrapper .status-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  z-index: 150;
+}
+
+.status-box :is(.status) {
+  margin-right: var(--space-basic);
+}
+
+.status-box .checked {
+  color: var(--color-yellow);
+}
+
+.status-box .pause {
+  display: none;
+}
 /* animation section */
 @keyframes topToBottom {
   0% {
