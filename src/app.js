@@ -25,6 +25,7 @@ const handleSlideRightBtn = (event) => {
   const currentSlide = document.querySelector(".showing");
   if (currentSlide) {
     const nextSlide = currentSlide.nextElementSibling;
+    currentSlide.style.animation = "leftToRight 300ms linear";
     currentSlide.classList.remove("showing");
     !!nextSlide &&
     nextSlide !== carouselRightBtn &&
@@ -64,3 +65,7 @@ carouselLeftBtn.addEventListener("click", handleSlideLeftBtn);
 window.addEventListener("resize", () => {
   carouselWrapper.style.height = `${carouselImg.height}px`;
 });
+
+// Carousel 메뉴에서 자동으로 넘어가는 기능을 끄고 켜는 토글러
+const moveToNextSlide = setInterval(handleSlideRightBtn, 5000);
+const stopNextSlide = clearInterval(moveToNextSlide);
