@@ -346,6 +346,10 @@ input {
   color: var(--color-yellow);
 }
 
+.status-box :is(.play, .pause) {
+  cursor: pointer;
+}
+
 .status-box .pause {
   display: none;
 }
