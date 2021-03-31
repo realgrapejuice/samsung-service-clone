@@ -43,7 +43,6 @@ const handleSlideRightBtn = (event) => {
   if (currentSlide && currentStatus) {
     const nextSlide = currentSlide.nextElementSibling;
     const nextStatus = currentStatus.nextElementSibling;
-    console.log(nextSlide);
     currentSlide.classList.remove("showing");
     currentStatus.classList.remove("checked");
     // 버튼클릭과 관련
