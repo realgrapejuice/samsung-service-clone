@@ -348,10 +348,11 @@ input {
 
 .status-box :is(.play, .pause) {
   cursor: pointer;
+  display: none;
 }
 
-.status-box .pause {
-  display: none;
+.status-box .is-active {
+  display: block;
 }
 /* animation section */
 @keyframes topToBottom {

@@ -23,6 +23,7 @@ const lastStatus = document.querySelector(
 const statusBox = document.querySelector(".carousel-wrapper .status-box");
 const playBtn = document.querySelector(".carousel-wrapper .play");
 const pauseBtn = document.querySelector(".carousel-wrapper .pause");
+let playTimer;
 
 // 함수 섹션
 // 사이트맵을 보여주는 것과 관련 있는 함수
@@ -42,11 +43,14 @@ const handleSlideRightBtn = (event) => {
   if (currentSlide && currentStatus) {
     const nextSlide = currentSlide.nextElementSibling;
     const nextStatus = currentStatus.nextElementSibling;
+    console.log(nextSlide);
     currentSlide.classList.remove("showing");
     currentStatus.classList.remove("checked");
-    !!nextSlide && nextSlide !== (carouselRightBtn || carouselLeftBtn)
+    // 버튼클릭과 관련
+    !!nextSlide && nextSlide !== (carouselRightBtn && carouselLeftBtn)
       ? nextSlide.classList.add("showing")
       : firstSlide.classList.add("showing");
+    // 상태 알림과 관련
     !!nextStatus && nextStatus !== (playBtn || pauseBtn)
       ? nextStatus.classList.add("checked")
       : firstStatus.classList.add("checked");
@@ -62,7 +66,7 @@ const handleSlideLeftBtn = (event) => {
     currentSlide.classList.remove("showing");
     currentStatus.classList.remove("checked");
     // 버튼클릭과 관련
-    !!prevSlide && prevSlide !== (carouselLeftBtn || carouselRightBtn)
+    !!prevSlide && prevSlide !== (carouselLeftBtn && carouselRightBtn)
       ? prevSlide.classList.add("showing")
       : lastSlide.classList.add("showing");
     // 상태 알림과 관련
@@ -72,22 +76,16 @@ const handleSlideLeftBtn = (event) => {
   }
 };
 
-// 20210331, 플레이버튼과 퍼즈버튼을 토글하는 함수를 만들던 중 작업 종료
+// 플레이버튼과 퍼즈버튼을 클릭하면 버튼을 토글해주고, 타이머함수를 실행시켜주는 함수
 const togglePlayAndPause = (event) => {
-  let play;
-  console.log(event.target);
-  switch (event.target.className) {
-    case "":
-      play = "null class";
-      break;
-    case "fa-play":
-      play = "fa-play class";
-      break;
-    case "play":
-      play = "play class";
-      break;
+  playBtn.classList.toggle("is-active");
+  pauseBtn.classList.toggle("is-active");
+  if (pauseBtn.classList.contains("is-active")) {
+    playTimer = setInterval(handleSlideRightBtn, 5000);
   }
-  console.log(play);
+  if (playBtn.classList.contains("is-active")) {
+    clearInterval(playTimer);
+  }
 };
 
 // 이벤트 핸들러 섹션
@@ -104,8 +102,8 @@ window.addEventListener("resize", () => {
   carouselWrapper.style.height = `${carouselImg.height}px`;
 });
 
-statusBox.addEventListener("click", togglePlayAndPause);
+playBtn.addEventListener("click", togglePlayAndPause);
+pauseBtn.addEventListener("click", togglePlayAndPause);
 
 // Carousel 메뉴에서 자동으로 넘어가는 기능을 끄고 켜는 토글러
-const moveToNextSlide = setInterval(handleSlideRightBtn, 5000);
-const stopNextSlide = clearInterval(moveToNextSlide);
+playTimer = setInterval(handleSlideRightBtn, 5000);
