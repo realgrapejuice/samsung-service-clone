@@ -49,7 +49,7 @@ a {
 
   --space-basic: 24px;
 
-  --font-xSmall: 12px;
+  --font-xsmall: 12px;
   --font-small: 14px;
   --font-regular: 20px;
   --font-medium: 24px;
@@ -503,7 +503,6 @@ input {
 
 .banner-wrapper {
   display: flex;
-
   max-width: 1392px;
   min-width: 960px;
   width: 100%;
@@ -542,6 +541,83 @@ input {
 .banner-desc {
   font-size: var(--font-small);
   margin: 0 24px;
+}
+
+/* Main Service CSS */
+.main-service__container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 var(--space-basic);
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.main-service__title {
+  text-align: center;
+}
+
+.main-service__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1392px;
+  min-width: 960px;
+  width: 100%;
+}
+
+.main-service__list-item {
+  display: flex;
+  padding: 40px 20px;
+  position: relative;
+  flex: 1 0 33.3%;
+  border-right: 1px solid var(--color-deep-grey);
+}
+
+.main-service__list-item:nth-child(3n) {
+  border-right: none;
+}
+
+.main-service__list-item:nth-child(1),
+.main-service__list-item:nth-child(2),
+.main-service__list-item:nth-child(3) {
+  border-bottom: 1px solid var(--color-deep-grey);
+}
+
+.main-service__list-item > a {
+  width: 70%;
+  height: 120px;
+  position: relative;
+}
+
+.main-service__list-item > a::after {
+  content: "바로가기";
+  display: block;
+  font-size: var(--font-small);
+  text-decoration: underline;
+  position: absolute;
+  bottom: 0;
+}
+
+.main-service__list-item > a > h3 {
+  font-size: var(--font-regular);
+}
+
+.main-service__list-item > a > p {
+  opacity: 0;
+  font-size: var(--font-xsmall);
+  transition: opacity 400ms ease-in-out;
+}
+
+.main-service__list-item > a:hover > p {
+  opacity: 1;
+}
+
+.main-service__list-item > .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  max-width: 130px;
+  font-size: 60px;
 }
 
 /* animation section */
