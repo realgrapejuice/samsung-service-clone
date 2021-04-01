@@ -86,14 +86,22 @@ hr {
 
 /* Header CSS */
 .header__container {
+  width: 100%;
+  height: 81px;
+  padding: 28px var(--space-basic) 0 var(--space-basic);
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  background-color: var(--color-white-basic);
+}
+
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1392px;
   min-width: 960px;
-  padding: 28px var(--space-basic) 0 var(--space-basic);
   margin: 0 auto;
-  position: relative;
 }
 
 .header__logo-block > a {
@@ -131,6 +139,16 @@ hr {
 
 .nav__list-item:hover::after {
   width: 100%;
+}
+
+.icon-icon {
+  font-size: var(--font-regular);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.icon-icon:last-of-type {
+  margin-right: 0;
 }
 
 /* sitemap */
@@ -210,16 +228,6 @@ hr {
 
 .sitemap-block li > a:hover::after {
   width: 100%;
-}
-
-.icon-icon {
-  font-size: var(--font-regular);
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.icon-icon:last-of-type {
-  margin-right: 0;
 }
 
 /* Main Section */
