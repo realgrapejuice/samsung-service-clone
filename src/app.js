@@ -56,6 +56,10 @@ const handleSlideRightBtn = (event) => {
   }
 };
 
+const handleWrapperHeight = (event) => {
+  carouselWrapper.style.height = `${carouselImg.height}px`;
+};
+
 const handleSlideLeftBtn = (event) => {
   const currentSlide = document.querySelector(".showing");
   const currentStatus = document.querySelector(".checked");
@@ -97,9 +101,7 @@ carouselRightBtn.addEventListener("click", handleSlideRightBtn);
 carouselLeftBtn.addEventListener("click", handleSlideLeftBtn);
 
 // 리사이즈시 Carousel Wrapper의 height를 조정해주는 이벤트 핸들러
-window.addEventListener("resize", () => {
-  carouselWrapper.style.height = `${carouselImg.height}px`;
-});
+window.addEventListener("resize", handleWrapperHeight);
 
 playBtn.addEventListener("click", togglePlayAndPause);
 pauseBtn.addEventListener("click", togglePlayAndPause);
