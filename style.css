@@ -351,17 +351,24 @@ hr {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   top: 20px;
   z-index: 150;
 }
 
 .status-box :is(.status) {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   margin-right: var(--space-basic);
+  background-color: var(--color-black-bg);
 }
 
 .status-box .checked {
-  color: var(--color-yellow);
+  background-color: var(--color-yellow);
+  width: 30px;
+  border-radius: 15px;
 }
 
 .status-box :is(.play, .pause) {
@@ -382,6 +389,7 @@ hr {
   margin: 0 auto;
   text-align: center;
   padding: 0 var(--space-basic);
+  margin-bottom: 73px;
 }
 
 .search-form {
@@ -510,7 +518,7 @@ hr {
   max-width: 1440px;
   min-width: 1024px;
   padding: 0 var(--space-basic);
-  margin: 0 auto;
+  margin: 73px auto;
 }
 
 .banner-wrapper {
@@ -637,7 +645,7 @@ hr {
   width: 100%;
   max-width: 1440px;
   padding: 0 var(--space-basic);
-  margin: 0 auto;
+  margin: 0 auto 73px auto;
   text-align: center;
 }
 
