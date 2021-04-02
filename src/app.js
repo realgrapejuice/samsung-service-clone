@@ -23,7 +23,15 @@ const lastStatus = document.querySelector(
 const statusBox = document.querySelector(".carousel-wrapper .status-box");
 const playBtn = document.querySelector(".carousel-wrapper .play");
 const pauseBtn = document.querySelector(".carousel-wrapper .pause");
+
+// Carousel에서 clearInterval를 사용하기 위한 변수
 let playTimer;
+
+// 페이지 최상단으로 이동시키기 위해 사용되는 변수들
+// Top-Btn
+const moveToTopBtn = document.querySelector(".top-btn");
+const carouselHeight = carouselWrapper.getBoundingClientRect().height;
+console.log(carouselHeight);
 
 // 함수 섹션
 // 사이트맵을 보여주는 것과 관련 있는 함수
@@ -91,6 +99,18 @@ const togglePlayAndPause = (event) => {
   }
 };
 
+const hideMoveToTopBtn = () => {
+  if (window.scrollY > carouselHeight / 2) {
+    moveToTopBtn.classList.add("visible");
+  } else {
+    moveToTopBtn.classList.remove("visible");
+  }
+};
+
+const moveToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 // 이벤트 핸들러 섹션
 navUl.addEventListener("mouseover", handleNavUlMouseover);
 
@@ -108,3 +128,7 @@ pauseBtn.addEventListener("click", togglePlayAndPause);
 
 // Carousel 메뉴에서 자동으로 넘어가는 기능을 끄고 켜는 토글러
 playTimer = setInterval(handleSlideRightBtn, 5000);
+
+// 페이지 최상단으로 이동시켜주는 이벤트 핸들러
+moveToTopBtn.addEventListener("click", moveToTop);
+document.addEventListener("scroll", hideMoveToTopBtn);
