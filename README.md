@@ -1,6 +1,6 @@
 # 삼성전자서비스 홈페이지 클론
 
-*원본 홈페이지: https://www.samsungsvc.co.kr/*
+*원본 홈페이지: <a href="https://www.samsungsvc.co.kr/" _blank>https://www.samsungsvc.co.kr/</a>*
 
 ### 0. 목표로 삼은 부분
 
