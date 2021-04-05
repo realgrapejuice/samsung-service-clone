@@ -1,12 +1,13 @@
 # 삼성전자서비스 홈페이지 클론
 
-*원본 홈페이지: <https://www.samsungsvc.co.kr/>*
+
+*[원본링크](https://www.samsungsvc.co.kr/){:target="_blank"}*
 
 ### 0. 목표로 삼은 부분
 
 - 시맨틱한 마크업을 통해 기본적인 마크업이 가능하다는 것을 보여주기
 - Flex를 이용해 기본적인 반응형 웹사이트를 구현하기
-- Carousel 원리로 배너를 구현하고 setInterval와 clearInterval를 이용해 기본적인 동적 처리 구현하기
+- Carousel 배너를 구현하고 setInterval와 clearInterval를 이용해 기본적인 동적 처리 구현하기
 - Tab 키만 이용해도 전체적인 웹페이지 서핑이 가능하도록 구현해 웹접근성 높이기
 - NVDA 스크린리더를 활용해 웹사이트를 이용해보고 설명이 부족한 부분에 ARIA를 사용해 웹접근성 높이기
 
