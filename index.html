@@ -18,10 +18,11 @@
 <body>
   <!-- Header Section -->
   <header class="header__container">
+    <h1 class="main-title">삼성전자서비스</h1>
     <div class="header__inner">
       <!-- 로고에 해당하는 부분 -->
       <div class="header__logo-block">
-        <a href="#">
+        <a href="#" aria-label="삼성전자서비스 홈페이지입니다">
           <img src="./src/img/CI(삼성전자서비스).PNG" alt="삼성전자서비스 로고">
         </a>
       </div>
@@ -67,7 +68,7 @@
       <!-- 스스로 해결 -->
       <div class="solution sitemap-block">
         <h3 class="sitemap-title">스스로해결</h3>
-        <ul class="solution-list">
+        <ul class="solution-list" aria-label="스스로해결 카테고리">
           <li class=" solution-list-item">
             <a href="#">모바일</a>
           </li>
@@ -112,7 +113,7 @@
       <!-- 전문 상담 -->
       <div class="consulting sitemap-block">
         <h3 class="sitemap-title">전문상담</h3>
-        <ul class="consulting-list">
+        <ul class="consulting-list" aria-label="전문상담 카테고리">
           <li class="consulting-list-item">
             <a href="#">챗봇상담</a>
           </li>
@@ -130,7 +131,7 @@
       <!-- 서비스 안내 -->
       <div class="information sitemap-block">
         <h3 class="sitemap-title">서비스 안내</h3>
-        <ul class="information-list">
+        <ul class="information-list" aria-label="서비스 안내 카테고리">
           <li class="information-list-item">
             <a href="#">요금안내</a>
           </li>
@@ -151,7 +152,7 @@
       <!-- 서비스 예약 -->
       <div class="reservation sitemap-block">
         <h3 class="sitemap-title">서비스 예약</h3>
-        <ul class="reservation-list">
+        <ul class="reservation-list" aria-label="서비스 예약 카테고리">
           <li class="reservation-list-item">
             <a href="#">센터찾기</a>
           </li>
@@ -166,7 +167,7 @@
       <!-- 소모품샵 -->
       <div class="shop sitemap-block">
         <h3 class="sitemap-title">소모품샵</h3>
-        <ul class="shop-list">
+        <ul class="shop-list" aria-label="소모품샵 카테고리">
           <li class="shop-list-item">
             <a href="#">모바일</a>
           </li>
@@ -205,7 +206,7 @@
       <!-- 고객의 소리 -->
       <div class="userOpinion sitemap-block">
         <h3 class="sitemap-title">고객의 소리</h3>
-        <ul class="userOpinion-list">
+        <ul class="userOpinion-list" aria-label="고객의 소리 섹션">
           <li class="userOpinion-list-item">
             <a href="#">칭찬합니다</a>
           </li>
@@ -290,30 +291,30 @@
     </section>
     <section class="search__container">
       <h2 class="search-title">제품정보, 증상을 찾아보세요</h2>
-      <form action="#" method="GET" class="search-form">
+      <form action="#" method="GET" class="search-form" aria-label="검색할 내용을 입력하고 엔터를 누르세요">
         <input type="text" placeholder="예) 동파, 침수, 비밀번호 해제, SL-C46xFW">
-        <button type="submit">
+        <button type="submit" aria-label="검색">
           <i class="fas fa-search"></i>
         </button>
       </form>
-      <div class="search-tag">
-        <a href="#" class="tag-item">#SL-J1660</a>
-        <a href="" class="tag-item">#SL-m2027</a>
-        <a href="" class="tag-item">#SL-J1560W</a>
-        <a href="" class="tag-item">#sl-c565w</a>
-        <a href="" class="tag-item">#SL-C565FW</a>
-        <a href="" class="tag-item">이전설치</a>
+      <div class="search-tag" aria-hidden="true">
+        <a href="#" class="tag-item" tabindex="-1">#SL-J1660</a>
+        <a href="#" class="tag-item" tabindex="-1">#SL-m2027</a>
+        <a href="#" class="tag-item" tabindex="-1">#SL-J1560W</a>
+        <a href="#" class="tag-item" tabindex="-1">#sl-c565w</a>
+        <a href="#" class="tag-item" tabindex="-1">#SL-C565FW</a>
+        <a href="#" class="tag-item" tabindex="-1">이전설치</a>
       </div>
     </section>
     <!-- 보조선 -->
     <hr>
     <section class="product__container">
       <h2 class="product__title">궁금하신 제품을 선택하세요</h2>
-      <ul class="product__list">
+      <ul class="product__list" aria-label="궁금하신 제품을 선택하세요 섹션">
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/mobile.png" alt="모바일 아이콘">
+              <img src="./src/img/mobile.png" alt="모바일">
             </div>
             <span class="product-name">모바일</span>
           </a>
@@ -321,7 +322,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/pc.png" alt="PC 아이콘">
+              <img src="./src/img/pc.png" alt="PC">
             </div>
             <span class="product-name">PC</span>
           </a>
@@ -329,7 +330,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/monitor.png" alt="모니터 아이콘">
+              <img src="./src/img/monitor.png" alt="모니터">
             </div>
             <span class="product-name">모니터</span>
           </a>
@@ -337,7 +338,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/printer.png" alt="프린터 아이콘">
+              <img src="./src/img/printer.png" alt="프린터/복합기">
             </div>
             <span class="product-name">프린터/복합기</span>
           </a>
@@ -345,7 +346,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/tv.png" alt="TV 아이콘">
+              <img src="./src/img/tv.png" alt="TV">
             </div>
             <span class="product-name">TV</span>
           </a>
@@ -353,7 +354,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/aircondition.png" alt="에어컨 아이콘">
+              <img src="./src/img/aircondition.png" alt="에어컨">
             </div>
             <span class="product-name">에어컨</span>
           </a>
@@ -361,7 +362,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/refrigerator.png" alt="냉장고 아이콘">
+              <img src="./src/img/refrigerator.png" alt="냉장고/김치냉장고">
             </div>
             <span class="product-name">냉장고/김치냉장고</span>
           </a>
@@ -369,7 +370,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/laundry.png" alt="세탁기 아이콘">
+              <img src="./src/img/laundry.png" alt="세탁기/건조기">
             </div>
             <span class="product-name">세탁기/건조기</span>
           </a>
@@ -377,7 +378,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/vacuum.png" alt="청소기 아이콘">
+              <img src="./src/img/vacuum.png" alt="청소기">
             </div>
             <span class="product-name">청소기</span>
           </a>
@@ -385,7 +386,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/aircleaner.png" alt="공기청정기 아이콘">
+              <img src="./src/img/aircleaner.png" alt="건강가전">
             </div>
             <span class="product-name">건강가전</span>
           </a>
@@ -393,7 +394,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/livingroom.png" alt="주방가전 아이콘">
+              <img src="./src/img/livingroom.png" alt="주방가전">
             </div>
             <span class="product-name">주방가전</span>
           </a>
@@ -401,7 +402,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/audio.png" alt="오디오 아이콘">
+              <img src="./src/img/audio.png" alt="오디오">
             </div>
             <span class="product-name">오디오</span>
           </a>
@@ -409,7 +410,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/smartthings.png" alt="스마트싱스 아이콘">
+              <img src="./src/img/smartthings.png" alt="스마트싱스">
             </div>
             <span class="product-name">스마트싱스</span>
           </a>
@@ -417,7 +418,7 @@
         <li class="product__list-item">
           <a href="#">
             <div class="product-icon">
-              <img src="./src/img/etc.png" alt="기타가전 아이콘">
+              <img src="./src/img/etc.png" alt="기타가전">
             </div>
             <span class="product-name">기타가전</span>
           </a>
@@ -427,27 +428,33 @@
     <!-- 보조선 -->
     <hr>
     <section class="banner__container">
-      <ul class="banner-wrapper">
+      <ul class="banner-wrapper" aria-label="주요 서비스 안내 섹션">
         <li class="banner__list-item">
-          <div class="banner-img">
-            <img src="./src/img/self-solution.png" alt="자가진단 메뉴 사진">
-          </div>
-          <h3 class="banner-title">제품자가진단</h3>
-          <p class="banner-desc">등록된 생활가전 제품의 진단 결과를 간편하게 확인해 보세요.</p>
+          <a href="#">
+            <div class="banner-img">
+              <img src="./src/img/self-solution.png" alt="제품자가진단">
+            </div>
+            <h3 class="banner-title">제품자가진단</h3>
+            <p class="banner-desc">등록된 생활가전 제품의 진단 결과를 간편하게 확인해 보세요.</p>
+          </a>
         </li>
         <li class="banner__list-item">
-          <div class="banner-img">
-            <img src="./src/img/video-guide.png" alt="비디오 가이드 메뉴 사진">
-          </div>
-          <h3 class="banner-title">동영상</h3>
-          <p class="banner-desc">동영상 가이드를 활용하여 제품에 대한 궁금증을 해결할 수 있습니다.</p>
+          <a href="#">
+            <div class="banner-img">
+              <img src="./src/img/video-guide.png" alt="동영상">
+            </div>
+            <h3 class="banner-title">동영상</h3>
+            <p class="banner-desc">동영상 가이드를 활용하여 제품에 대한 궁금증을 해결할 수 있습니다.</p>
+          </a>
         </li>
         <li class="banner__list-item">
-          <div class="banner-img">
-            <img src="./src/img/download-center.png" alt="다운로드자료실 메뉴 사진">
-          </div>
-          <h3 class="banner-title">다운로드 자료실</h3>
-          <p class="banner-desc">제품 관련 유용한 자료를 다운로드할 수 있습니다.</p>
+          <a href="#">
+            <div class="banner-img">
+              <img src="./src/img/download-center.png" alt="다운로드자료실">
+            </div>
+            <h3 class="banner-title">다운로드 자료실</h3>
+            <p class="banner-desc">제품 관련 유용한 자료를 다운로드할 수 있습니다.</p>
+          </a>
         </li>
       </ul>
     </section>
@@ -455,7 +462,7 @@
     <hr>
     <section class="main-service__container">
       <h2 class="main-service__title">주요 서비스 안내</h2>
-      <ul class="main-service__list">
+      <ul class="main-service__list" aria-label="주요 서비스 안내 섹션">
         <li class="main-service__list-item">
           <a href="#">
             <h3>챗봇 상담</h3>
@@ -516,7 +523,7 @@
     <hr>
     <section class="blog__container">
       <h2 class="blog__title">블로그</h2>
-      <ul class="blog__list">
+      <ul class="blog__list" aria-label="블로그 섹션">
         <li class="blog__list-item">
           <a href="#">
             <div class="img-box">
@@ -563,23 +570,25 @@
     <hr>
     <section class="notice__container">
       <h2 class="notice__title">공지사항</h2>
-      <ul class="notice__list">
+      <ul class="notice__list" aria-label="공지사항 섹션">
         <li class="notice__list-item">
           <a href="#">
             <h3 class="notice__item-title">2021년 4월 3일 금촌센터 리뉴얼 공사 안내</h3>
-            <span class="notice__item-date">2021-03-30</span>
+            <span class="notice__item-date" role="img" aria-label="작성일: 2021년 3월 30일">2021-03-30</span>
           </a>
         </li>
         <li class="notice__list-item">
           <a href="#">
-            <h3 class="notice__item-title">홈페이지 서버점검으로 일부 서비스 중단 안내 [3/31일(수) 20:00 ~ 24:00]</h3>
-            <span class="notice__item-date">2021-03-30</span>
+            <h3 class="notice__item-title" role="img"
+              aria-label="홈페이지 서버점검으로 일부 서비스 중단 안내 3월 31일 수요일 오후 8시부터 오전 12시까지(총 4시간)">홈페이지 서버점검으로 일부 서비스 중단 안내
+              [3/31일(수) 20:00 ~ 24:00]</h3>
+            <span class="notice__item-date" role="img" aria-label="작성일: 2021년 3월 30일">2021-03-30</span>
           </a>
         </li>
         <li class="notice__list-item">
           <a href="#">
             <h3 class="notice__item-title">휴대폰 액정 화면 단품 수리 안내('21년 4월 1일 적용 비용)</h3>
-            <span class="notice__item-date">2021-02-08</span>
+            <span class="notice__item-date" role="img" aria-label="작성일: 2021년 2월 8일">2021-02-08</span>
           </a>
         </li>
       </ul>
@@ -603,19 +612,20 @@
     <hr>
     <section class="company-info__container">
       <p class="company-info__data">
-        <span class="company-info__item">주소 : 경기도 수원시 영통구 삼성로 290 삼성전자서비스주식회사</span>
-        <span class="company-info__item">대표이사 : 심원환</span>
-        <span class="company-info__item">사업자등록번호 : 124-81-58485</span>
-        <span class="company-info__item">통신판매업신고번호 : 제2005-406호</span>
-        <span class="company-info__item"><a href="#"><u>사업자번호확인</u></a></span>
-        <span class="company-info__item">호스팅서비스제공자 : 삼성에스디에스㈜</span>
-        <span class="company-info__item">대표전화 : 1588-3366</span>
-        <span class="company-info__item">회원문의 : 080-719-4031</span>
+        <span class="company-info__item" tabindex="0">주소 : 경기도 수원시 영통구 삼성로 290 삼성전자서비스주식회사</span>
+        <span class="company-info__item" tabindex="0">대표이사 : 심원환</span>
+        <span class="company-info__item" tabindex="0">사업자등록번호 : 124-81-58485</span>
+        <span class="company-info__item" tabindex="0">통신판매업신고번호 : 제2005-406호</span>
+        <span class="company-info__item" tabindex="0"><a href="#"><u>사업자번호확인</u></a></span>
+        <span class="company-info__item" tabindex="0">호스팅서비스제공자 : 삼성에스디에스㈜</span>
+        <span class="company-info__item" tabindex="0">대표전화 : 1588-3366</span>
+        <span class="company-info__item" tabindex="0">회원문의 : 080-719-4031</span>
       </p>
-      <p class="company-info__data"> 본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다. </p>
-      <p class="company-info__data"> Copyright ©SAMSUNG ELECTRONICS SERVICE CO., Ltd. All rights reserved. </p>
+      <p class="company-info__data" tabindex="0"> 본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다. </p>
+      <p class="company-info__data" tabindex="0"> Copyright ©SAMSUNG ELECTRONICS SERVICE CO., Ltd. All rights reserved.
+      </p>
     </section>
-    <button class="top-btn" type="button">
+    <button class="top-btn" type="button" aria-label="홈페이지 처음으로 이동하기">
       <i class="fas fa-arrow-circle-up"></i>
     </button>
   </footer>

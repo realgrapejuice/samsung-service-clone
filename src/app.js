@@ -1,6 +1,7 @@
 // 글로벌 변수 섹션
 // Nav Variables
 const navUl = document.querySelector(".nav__list");
+const navItem = document.querySelectorAll(".nav__list-item");
 
 // Sitemap Variables
 const sitemapBlock = document.querySelector(".header__sitemap");
@@ -113,6 +114,11 @@ const moveToTop = () => {
 
 // 이벤트 핸들러 섹션
 navUl.addEventListener("mouseover", handleNavUlMouseover);
+navItem.forEach((element) => {
+  element.addEventListener("submit", (event) => {
+    console.log(event);
+  });
+});
 
 sitemapBlock.addEventListener("mouseleave", handleNavUlMouseoverMouseleave);
 

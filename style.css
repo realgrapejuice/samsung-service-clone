@@ -94,6 +94,10 @@ hr {
   background-color: var(--color-white-basic);
 }
 
+.main-title {
+  display: none;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
