@@ -1,16 +1,12 @@
 # 삼성전자서비스 홈페이지 클론
 
-
-[원본링크](https://www.samsungsvc.co.kr/){:target="_blank"}
-<a href="https://www.samsungsvc.co.kr/" target="_blank">원본링크</a>
-
 ### 0. 목표로 삼은 부분
 
-- 시맨틱한 마크업을 통해 기본적인 마크업이 가능하다는 것을 보여주기
-- Flex를 이용해 기본적인 반응형 웹사이트를 구현하기
-- Carousel 배너를 구현하고 setInterval와 clearInterval를 이용해 기본적인 동적 처리 구현하기
-- Tab 키만 이용해도 전체적인 웹페이지 서핑이 가능하도록 구현해 웹접근성 높이기
-- NVDA 스크린리더를 활용해 웹사이트를 이용해보고 설명이 부족한 부분에 ARIA를 사용해 웹접근성 높이기
+- 시맨틱한 마크업
+- Flex를 이용해 기본적인 반응형 웹사이트 구현
+- Carousel 배너를 구현하고 setInterval와 clearInterval를 이용해 기본적인 동적 처리 구현
+- Tab 키만 이용해도 전체적인 웹페이지 서핑이 가능하도록 구현해 웹접근성 개선
+- NVDA 스크린리더를 활용해 웹사이트를 이용해보고 설명이 부족한 부분에 ARIA를 사용해 웹접근성 개선
 
 ### 1. 특징 및 기능
 
@@ -26,31 +22,24 @@
 
 ### 3. 프로젝트 스크린샷
 
-#### 3.1 전체 페이지
 
-<p align="center">
-<img src="" width="80%">
-</p>
+#### 3.1 전체 페이지 비디오
 
-#### 3.2 Carousel 배너
-
-|          Before          |          After           |
+|          1          |          2          |
 | :----------------------: | :----------------------: |
-| <img src="" width="90%"> | <img src="" width="90%"> |
+| <img src="https://user-images.githubusercontent.com/66715905/113583787-0bdf9f00-9665-11eb-8262-527f3f27180e.gif" width="90%"> | <img src="https://user-images.githubusercontent.com/66715905/113583806-11d58000-9665-11eb-9195-be6f6f1bf76a.gif" width="90%"> |
 
-#### 3.3 아이콘 인터렉션
-
-| Icon Interaction | Local Storage |
-| :--------------: | :-----------: |
-|   <img src="">   |
-
-#### 3.4 Tab Index를 사용해 탭 이용 서핑 시 사용감을 개선함
+#### 3.2 Tab Index를 사용해 탭 이용 서핑 시 사용감을 개선함
 
 <p align="center">
-  <img src="" width="50%">
+  <img src="https://user-images.githubusercontent.com/66715905/113584229-9aecb700-9665-11eb-8b61-af8dd386205b.png" width="50%">
 </p>
 
-#### 3.5 ARIA를 사용해 스크린리더 사용 시 웹접근성을 개선함
+#### 3.3 ARIA를 사용해 스크린리더 사용 시 웹접근성을 개선함
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66715905/113584341-beaffd00-9665-11eb-8ab6-790fd38ca7e2.png" width="50%">
+</p>
 
 ### 4. 피드백 및 리뷰
 
