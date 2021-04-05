@@ -2,7 +2,7 @@
 
 
 [원본링크](https://www.samsungsvc.co.kr/){:target="_blank"}
-<a href="https://www.samsungsvc.co.kr/" target="_blank">원본링크</
+<a href="https://www.samsungsvc.co.kr/" target="_blank">원본링크</a>
 
 ### 0. 목표로 삼은 부분
 
