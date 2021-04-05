@@ -1,7 +1,7 @@
 # 삼성전자서비스 홈페이지 클론
 
 
-*[원본링크](https://www.samsungsvc.co.kr/){:target="_blank"}*
+[원본링크](https://www.samsungsvc.co.kr/){:target="_blank"}
 
 ### 0. 목표로 삼은 부분
 
