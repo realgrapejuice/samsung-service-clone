@@ -1,10 +1,10 @@
 // 글로벌 변수 섹션
 // Nav Variables
 const navUl = document.querySelector(".nav__list");
-const navItem = document.querySelectorAll(".nav__list-item");
 
 // Sitemap Variables
 const sitemapBlock = document.querySelector(".header__sitemap");
+const solutionTitle = document.querySelector("#solution .sitemap-title");
 
 // Carousel Variables
 const carouselWrapper = document.querySelector(".carousel-wrapper");
@@ -32,10 +32,13 @@ let playTimer;
 // Top-Btn
 const moveToTopBtn = document.querySelector(".top-btn");
 const carouselHeight = carouselWrapper.getBoundingClientRect().height;
-console.log(carouselHeight);
 
 // 함수 섹션
 // 사이트맵을 보여주는 것과 관련 있는 함수
+const handleEnter = (event) => {
+  handleNavUlMouseover();
+};
+
 const handleNavUlMouseover = (event) => {
   sitemapBlock.style.display = "flex";
 };
@@ -114,13 +117,13 @@ const moveToTop = () => {
 
 // 이벤트 핸들러 섹션
 navUl.addEventListener("mouseover", handleNavUlMouseover);
-navItem.forEach((element) => {
-  element.addEventListener("submit", (event) => {
-    console.log(event);
-  });
-});
 
 sitemapBlock.addEventListener("mouseleave", handleNavUlMouseoverMouseleave);
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    sitemapBlock.style.display = "none";
+  }
+});
 
 // Carousel 메뉴의 이벤트 핸들러
 carouselRightBtn.addEventListener("click", handleSlideRightBtn);
